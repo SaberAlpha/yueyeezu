@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    >
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:id="@+id/home_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bbs_grade_thirdly"
+        android:layout_toRightOf="@id/icon"
+        android:layout_alignTop="@id/icon"/>
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="把时间固定那可是感觉那是啊实打实的大所多肯定见过纳斯达"
+        android:layout_toRightOf="@id/home_iv"
+        android:layout_alignTop="@id/icon"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/icon"
+    android:layout_below="@id/title_tv"
+    android:layout_marginTop="10dp">
+    <ImageView
+        android:id="@+id/person_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/person"
+        />
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="社区活动"
+        android:layout_toRightOf="@id/person_iv"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@id/person_iv"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/time_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/time"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11-15"
+        android:layout_toRightOf="@id/time_iv"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/talk_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23/23122"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        />
+    <ImageView
+        android:id="@+id/talk_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/talkto"
+        android:layout_toLeftOf="@id/talk_tv"
+        android:layout_alignBottom="@id/talk_tv"
+        />
+
+</RelativeLayout>
+
+</RelativeLayout>

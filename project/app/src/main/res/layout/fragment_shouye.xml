@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/my_information_shouye"
+           android:layout_width="25dp"
+           android:src="@drawable/person"
+           android:layout_height="25dp"
+           />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/logoinlogo"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/my_search"
+            android:layout_width="25dp"
+            android:src="@drawable/personal_search_new"
+            android:layout_height="25dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#F3F3F3"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_height="40dp">
+        <android.support.design.widget.TabLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/shouye_tablayout"
+            app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium"
+            app:tabTextColor="#000"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="#f00"
+            app:tabIndicatorColor="#fff"
+            app:tabMaxWidth="60dp"
+            android:layout_height="match_parent">
+
+        </android.support.design.widget.TabLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/top_pic_bottom_bg"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/shouye_iv_add"
+            android:padding="8dp"
+            android:layout_width="35dp"
+            android:src="@mipmap/jia"
+            android:layout_gravity="center"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/redian_view_pager">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/register_clean"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/clean_text"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logoinlogo"/>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/register_telnumber"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:inputType="text"
+            android:hint="请输入电话号码"
+            android:drawableLeft="@drawable/personal_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/register_keycode"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:inputType="text"
+                android:hint="请输入验证码"
+                android:drawableLeft="@drawable/personal_icon"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="35dp" />
+            <TextView
+                android:gravity="center"
+                android:background="#78797A"
+                android:textColor="#fff"
+                android:id="@+id/getkeycode"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:text="请获取\n验证码"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_step1_sure"
+            android:layout_margin="10dp"
+            android:background="#78797A"
+            android:text="确定"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

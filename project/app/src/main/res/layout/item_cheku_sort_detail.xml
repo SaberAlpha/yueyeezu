@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/item_cheku_sort_detail_iv"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/item_cheku_sort_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_cheku_sort_detail_iv"
+        android:layout_toRightOf="@+id/item_cheku_sort_detail_iv"
+        android:text="name"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_cheku_sort_detail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_cheku_sort_detail_iv"
+        android:layout_toRightOf="@+id/item_cheku_sort_detail_iv"
+        android:text="size"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/item_cheku_sort_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_cheku_sort_detail_iv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/item_cheku_sort_detail_size"
+        android:text="price"
+        android:textColor="#ef1337"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c4c8cc" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <ImageView
+        android:id="@+id/welcome_bg"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/suvbg"/>
+    <TextView
+        android:id="@+id/welome_jump"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="@drawable/welcome_text"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="跳过"
+        />
+
+    <ImageView
+        android:id="@+id/welocme_logo"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welocme_logo"
+        android:layout_width="wrap_content"
+        android:text="正在加载...."
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

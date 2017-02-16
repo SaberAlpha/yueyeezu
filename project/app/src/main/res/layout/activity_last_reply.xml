@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.suvsproject.modules.luntan.activity.LastReplyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/back_luntan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/head_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后回复"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/comment_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/news_detail_reply_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+        <CheckBox
+            android:id="@+id/shoucang_cb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:button="@null"
+            android:background="@drawable/forum_collect_up"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/comment_iv"
+            android:layout_marginRight="30dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lineColor"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

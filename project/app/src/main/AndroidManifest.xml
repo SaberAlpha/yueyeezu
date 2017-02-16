@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.suvsproject">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    -
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    -
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    -
+
+    <!-- 自动聚焦权限 -->
+    <application
+        android:name=".SUVsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LogActivity" />
+        <activity android:name=".modules.MyLogin.activity.Collection.MyCollection" />
+        <activity android:name=".modules.MyLogin.activity.Tiezi.Mytiezi" />
+        <activity android:name=".modules.MyLogin.activity.MyFriend" />
+        <activity android:name=".modules.MyLogin.activity.SaoyiSao" />
+        <activity android:name=".modules.MyLogin.activity.SiXin" />
+        <activity android:name=".modules.MyLogin.activity.Caogao" />
+        <activity android:name=".modules.MyLogin.activity.Search.SearchActivity" />
+        <activity android:name=".modules.MyLogin.activity.Setting.SettingActivity" />
+        <activity android:name=".modules.shipin.activity.ShipinScreenplay" />
+        <activity android:name=".modules.MyLogin.activity.Setting.AboutActivity" />
+        <activity android:name=".modules.luntan.activity.PaihangActivity" />
+        <activity android:name=".modules.luntan.activity.CommonActivity" />
+        <activity android:name=".modules.luntan.activity.LastReplyActivity" />
+        <activity android:name=".modules.cheku.activity.ChekuSearchActivity" />
+        <activity android:name=".modules.MyLogin.activity.LoginCheckActivity" />
+        <activity android:name=".modules.MyLogin.activity.Myhome.MyhomeActivity" />
+        <activity android:name=".modules.cheku.activity.ChekuCarInfoActivity" />
+        <activity android:name=".modules.cheku.activity.ChekuPicsShowActivity" />
+        <activity android:name="com.qrcode.ErweiMaActivity" />
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".modules.MyLogin.activity.Myhome.MyinformationActivity" />
+        <activity android:name=".modules.MyLogin.activity.Resiger.ResigerActivity" />
+        <activity android:name=".modules.MyLogin.activity.Resiger.ResigerInformationActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/myfriend_back"
+            android:layout_width="25dp"
+            android:src="@drawable/top_back"
+            android:layout_height="25dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="联系人"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/myfriend_refresh"
+            android:layout_width="25dp"
+            android:src="@drawable/shuaxin"
+            android:layout_height="25dp"
+            />
+    </RelativeLayout>
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/mysearch_text"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:hint="在联系人中搜索"
+        android:inputType="text"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/personal_search_icon"
+        android:drawablePadding="5dp"
+        android:background="@drawable/search_shape"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/myfriend_car_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/myfriend_floating_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="#ff303030"
+            android:orientation="vertical">
+
+            <!-- 悬浮的ABC -->>
+
+            <TextView
+                android:id="@+id/myfriend_floating_catalog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#E0E0E0"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:textColor="#454545" />
+        </LinearLayout>
+
+
+        <!-- 右侧sidebar -->>
+
+        <com.example.administrator.suvsproject.modules.cheku.widget.SideBar
+            android:id="@+id/myfriend_sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>
